@@ -8,12 +8,12 @@ using System.Collections.Generic;
 
 namespace ExerciseProject.Repository.Implementation
 {
-    public class EmployeeRepository : IEmployeeRepository
+    public class SalaryRepository : ISalaryRepository
     {
         public EmployeeContext _EmployeeContext { get; }
         public IMapper _mapper { get; }
 
-        public EmployeeRepository(EmployeeContext dbContext, IMapper mapper)
+        public SalaryRepository(EmployeeContext dbContext, IMapper mapper)
         {
             _EmployeeContext = dbContext;
             _mapper = mapper;

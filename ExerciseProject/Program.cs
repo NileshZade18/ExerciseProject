@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EmployeeContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeDbConnectionString")));
-builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<ISalaryRepository, SalaryRepository>();
 builder.Services.AddAutoMapper(typeof(ModelMapper));
 var app = builder.Build();
 

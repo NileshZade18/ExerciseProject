@@ -2,7 +2,7 @@
 
 namespace ExerciseProject.Repository.Interface
 {
-    public interface IEmployeeRepository
+    public interface ISalaryRepository
     {
         Task<SalaryDTO> GetById(int id);
         Task<List<SalaryDTO>> GetAll();

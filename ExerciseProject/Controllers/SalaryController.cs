@@ -10,9 +10,9 @@ namespace ExerciseProject.Controllers
     [ApiController]
     public class SalaryController : ControllerBase
     {
-        public IEmployeeRepository _EmployeeRepository { get; }
+        public ISalaryRepository _EmployeeRepository { get; }
 
-        public SalaryController(EmployeeContext employeeContext, IEmployeeRepository employeeRepository)
+        public SalaryController(EmployeeContext employeeContext, ISalaryRepository employeeRepository)
         {
             _EmployeeRepository = employeeRepository;
         }
