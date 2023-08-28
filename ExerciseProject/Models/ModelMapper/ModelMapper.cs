@@ -9,6 +9,8 @@ namespace ExerciseProject.Models.ModelMapper
         public ModelMapper()
         {
             CreateMap<SalaryDetails, SalaryDTO>().ReverseMap();
+            CreateMap<Epmloyee, EmployeeDTO>().ReverseMap();
+
         }
     }
 }
