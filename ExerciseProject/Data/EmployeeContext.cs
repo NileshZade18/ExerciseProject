@@ -5,7 +5,7 @@ namespace ExerciseProject.Data
 {
     public class EmployeeContext : DbContext
     {
-        public EmployeeContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public EmployeeContext(DbContextOptions<EmployeeContext> dbContextOptions) : base(dbContextOptions)
         {
 
         }

@@ -1,6 +1,7 @@
 ﻿using ExerciseProject.Data;
 using ExerciseProject.Models.DataDriven;
 using ExerciseProject.Repository.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace ExerciseProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SalaryController : ControllerBase
     {
         public ISalaryRepository _EmployeeRepository { get; }
